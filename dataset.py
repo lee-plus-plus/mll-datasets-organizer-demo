@@ -33,7 +33,7 @@ def _load_from_arff(filename, dtype='float', encode_nominal=True):
 
     matrix = sparse.csc_matrix(np.array(arff_frame['data']))
 
-    if label_location == "start":
+    if label_location == "begin":
         X, y = matrix[:, dim_label:], matrix[:, :dim_label].astype(int)
         feature_names = arff_frame['attributes'][dim_label:]
         label_names = arff_frame['attributes'][:dim_label]
@@ -42,7 +42,7 @@ def _load_from_arff(filename, dtype='float', encode_nominal=True):
         feature_names = arff_frame['attributes'][:-dim_label]
         label_names = arff_frame['attributes'][-dim_label:]
     else:
-        raise ValueError("Label location not in {start, end}")
+        raise ValueError("Label location not in {begin, end}")
 
     return X, y, feature_names, label_names, info_dict
 
@@ -80,12 +80,12 @@ def save_to_arff(X, y, label_location="end", save_sparse=True, filename=None,
         y_prefix = X.shape[1]
         attributes = x_attributes + y_attributes
 
-    elif label_location == "start":
+    elif label_location == "begin":
         x_prefix = y.shape[1]
         attributes = y_attributes + x_attributes
 
     else:
-        raise ValueError("Label location not in {start, end}")
+        raise ValueError("Label location not in {begin, end}")
 
     if save_sparse:
         data = [{} for r in range(X.shape[0])]

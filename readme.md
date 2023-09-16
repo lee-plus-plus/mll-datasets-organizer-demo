@@ -1,6 +1,6 @@
-# simple framework to orgnize multi-label classification datasets
+# demo framework to organize multi-label learning datasets
 
-This code repository aims to give you a simple framework to **orgnize** massive mutli-label classification datasets. 
+This code repository aims to give you a demonstration framework to **orgnize** massive mutli-label learning datasets. 
 
 In details, it can
 

@@ -1,6 +1,6 @@
-# simple framework to orgnize multi-label classification datasets
+# demo framework to organize multi-label learning datasets
 
-这个代码仓库为你**管理**大量 multi-label classification 数据集提供简易框架. 
+这个代码仓库为你**管理**大量 multi-label learning 数据集提供一个示例框架. 
 
 具体而言，其提供以下功能
 

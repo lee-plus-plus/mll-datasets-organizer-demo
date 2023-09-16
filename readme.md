@@ -70,7 +70,7 @@ Given a `.arff` file (`ENRON.arff`) like this
 Please edit the **`@relation` line** at the begin of each arff file as follow 
 
 ```
-@relation 'Enron: -n 1702 -m 1001 -q 53 -label_location start -is_sparse true'
+@relation 'Enron: -m 1702 -d 1001 -q 53 -label_location start -is_sparse true'
 
 @attribute A.A8 {0,1}
 @attribute C.C9 {0,1}
@@ -94,10 +94,10 @@ Please edit the **`@relation` line** at the begin of each arff file as follow
 
 the detailed explaination of attributes are given below: 
 
-1. `-n`: the number of instances (not actually used)
-2. `-m`: dimensions of features (not actually used)
+1. `-m`: the number of instances (not actually used)
+2. `-d`: dimensions of features (not actually used)
 3. `-q`: dimensions of labels
-4. `-label_location`: if `@attribute` list the attribute of labels firstly, then the attribute of features, input `start`; otherwise, `end`
+4. `-label_location`: if `@attribute` list the attribute of labels firstly, then the attribute of features, input `begin`; otherwise, `end`
 5. `-is_sparse`: if `@data` is stored in sparse format, input `true`; otherwise `false` (not actually used)
 
 If you do that, you can load this dataset automatically! 

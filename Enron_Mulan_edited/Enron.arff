@@ -1,4 +1,4 @@
-@relation 'Enron: -n 1702 -m 1001 -q 53 -label_location start -is_sparse true'
+@relation 'Enron: -m 1702 -d 1001 -q 53 -label_location begin -is_sparse true'
 
 @attribute A.A8 {0,1}
 @attribute C.C9 {0,1}

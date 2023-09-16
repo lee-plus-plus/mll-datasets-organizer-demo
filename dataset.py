@@ -21,7 +21,7 @@ def _load_from_arff(filename, dtype='float', encode_nominal=True):
     info_dict = {key: value for key, value in zip(info_[0::2], info_[1::2])}
 
     assert('-m' in info_dict);
-    assert('-n' in info_dict);
+    assert('-d' in info_dict);
     assert('-q' in info_dict);
     assert('-label_location' in info_dict);
     assert('-is_sparse' in info_dict);
@@ -101,7 +101,7 @@ def save_to_arff(X, y, label_location="end", save_sparse=True, filename=None,
 
     dataset = {
         u'description': u'{}'.format(dataset_name),
-        u'relation': u'{}: -n {} -m {} -q {} label_location {} -is_sparse {}'.format(
+        u'relation': u'{}: -m {} -d {} -q {} label_location {} -is_sparse {}'.format(
             dataset_name, X.shape[0], X.shape[1], y.shape[1], label_location, save_sparse
         ),
         u'attributes': attributes,

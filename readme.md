@@ -32,8 +32,8 @@ Since `.arff` format do not distinguish features and labels,
 we need to manually split the 
 $n \times (m+q)$ matrix into the data (X) and targets (y). 
 However, Mulan-source files prefer to put labels put before features 
-($n \times (q+m)$), 
-while Meka-source files prefer the other way ($n \times (m+q)$). 
+( $n \times (q+m)$ ), 
+while Meka-source files prefer the other way ( $n \times (m+q)$ ). 
 The difference of preference cannot be distinguish unless we add some meta information. 
 
 Therefore, you need to **manually** add these meta information in each `.arff` file,

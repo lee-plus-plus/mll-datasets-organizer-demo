@@ -1,9 +1,13 @@
-# multi-label learning dataset and data-loader
+# simple framework to orgnize multi-label classification datasets
 
-This code repository aims to help you
+This code repository aims to give you a simple framework to **orgnize** massive mutli-label classification datasets. 
+
+In details, it can
 
 1. unify the arff-format dataset downloaded from [Multi-Label Classification Dataset Repository](https://www.uco.es/kdis/mllresources/)
 2. transform the format of dataset between `.arff` and `.mat` (for matlab)
+
+Notice: it is not a out-of-the-box package. 
 
 ## how to use it
 

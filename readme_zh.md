@@ -1,9 +1,13 @@
-# multi-label learning dataset and data-loader
+# simple framework to orgnize multi-label classification datasets
 
-这个代码仓库可以帮你
+这个代码仓库为你**管理**大量 multi-label classification 数据集提供简易框架. 
+
+具体而言，其提供以下功能
 
 1. 将来自 [Multi-Label Classification Dataset Repository](https://www.uco.es/kdis/mllresources/) 的数据集的 arff 格式统一
 2. 在 `.arff` and `.mat` (for matlab) 格式之间进行转换
+
+注意: 这不是一个开箱即用的包. 
 
 ## 如何使用
 
